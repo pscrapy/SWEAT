@@ -72,6 +72,7 @@ The first is a breakdown of the cumulative differences in polarizations for the 
 ..
 
 .. image:: https://raw.githubusercontent.com/pscrapy/SWEAT/master/img/plot_cumulative.png
+    :width: 400pt
 
 The second is a detailed breakdown of the single-word associations for the elements of the topic wordset X: for each topic word two pairs of boxplots are represented, one pair for each corpora. The two boxplots in the pair illustrate the distribution of the cosine similarity scores for the given topic word to all the elements of the two polarization wordsets. The offset bewteen the respective distribtion means is color-coded to indicate the "dominant" association which will in turn contribute to the cumulative score.
 
@@ -80,3 +81,4 @@ The second is a detailed breakdown of the single-word associations for the eleme
 ..
 
 .. image:: https://raw.githubusercontent.com/pscrapy/SWEAT/master/img/plot_details.png
+    :width: 400pt
