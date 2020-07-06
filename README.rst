@@ -62,21 +62,27 @@ The test results are returned as a dictionary with keys "score", "eff_size" and 
     print(swt.test(X))
 ..
 
+``>>> {'score': 0.2973, 'eff_size': 2.0709, 'p-val': 0.0003}``
+
+
 The two explorative visualizations illustrate are called using the ``plot_cumulative`` and ``plot_details`` methods respectively. 
 
 The first is a breakdown of the cumulative differences in polarizations for the two corpora, each represented as a colored barcharts where the colored areas represent the sums, over all elements of the topic wordset X, of the single-word associations to the two polarity wordsets. The black dot represent the cumulative association, i.e. one of the two sums over X of the SWEAT score formula.
 
 .. code-block:: python
-    # plot cumulative and detailed visualizations
+
+    # plot cumulative visualizations
     swt.plot_cumulative(X)
 ..
 
 .. image:: https://raw.githubusercontent.com/pscrapy/SWEAT/master/img/plot_cumulative.png
-    :width: 400pt
+    :align: center
 
 The second is a detailed breakdown of the single-word associations for the elements of the topic wordset X: for each topic word two pairs of boxplots are represented, one pair for each corpora. The two boxplots in the pair illustrate the distribution of the cosine similarity scores for the given topic word to all the elements of the two polarization wordsets. The offset bewteen the respective distribtion means is color-coded to indicate the "dominant" association which will in turn contribute to the cumulative score.
 
 .. code-block:: python
+
+    # plot details visualizations
     swt.plot_details(X)
 ..
 
